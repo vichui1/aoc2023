@@ -1,4 +1,4 @@
-with open("inputs/day1.txt") as f:
+with open("day1.txt") as f:
     data = f.readlines()
 
 def calibration(data):

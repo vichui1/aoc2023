@@ -1,6 +1,6 @@
 import re
 
-with open("inputs/day2.txt") as f:
+with open("day2.txt") as f:
     data = f.read().strip()
 
 ls = data.split("\n")
@@ -44,7 +44,6 @@ powerSum = 0
 for g in gs:
     rgb = [1,1,1]
     for s in g:
-        print(rgb)
         rgb = maxCubes(rgb, s)
     power = rgb[0] * rgb[1] * rgb [2]
     powerSum += power
